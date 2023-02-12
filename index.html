@@ -1,0 +1,51 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Expense Tracker</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <h1>JS Expense Tracker</h1>
+    <div class="input-container">
+      <label for="type">Type: </label>
+      <select name="type" id="type">
+        <option>Cash</option>
+        <option>Card</option>
+        <option>Crypto</option>
+        <option>Other</option>
+      </select>
+      <span></span>
+
+      <label for="date">Date: </label>
+      <input type="date" name="date" id="date" />
+      <span></span>
+
+      <label for="title">Title: </label>
+      <input type="text" name="title" id="title" />
+      <span></span>
+
+      <label for="amount">Amount: </label>
+      <input type="text" name="amount" id="amount" />
+      <span>$</span>
+
+      <span></span>
+      <button id="add">Add</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr class="table_header">
+          <th>Type</th>
+          <th>Date</th>
+          <th>Title</th>
+          <th>Amount</th>
+          <th>Options</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </body>
+  <script src="./main.js"></script>
+</html>
